@@ -1,0 +1,135 @@
+/* --- 1. NAVBAR GLASSMORPHISM --- */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+.nav-links { display: flex; gap: -10px; }
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.nav-links a.active, .nav-links a:hover { background: rgba(255, 255, 255, 0.1); }
+
+/* --- 2. NỀN GALAXY & BỤI SAO --- */
+body {
+    margin: 0; padding: 0; min-height: 100vh;
+    background: linear-gradient(135deg, #050816, #1a0b2e, #0b1a2e);
+    background-size: 300% 300%;
+    animation: gradientMove 15s ease infinite;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.stars { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.stars span {
+    position: absolute; width: 2px; height: 2px;
+    background: #fff; border-radius: 50%;
+    animation: starPulse 4s infinite;
+}
+.stars span:nth-child(1) { top: 20%; left: 30%; }
+.stars span:nth-child(2) { top: 50%; left: 80%; }
+.stars span:nth-child(3) { top: 70%; left: 10%; }
+.stars span:nth-child(4) { top: 10%; left: 90%; }
+.stars span:nth-child(5) { top: 40%; left: 50%; }
+@keyframes starPulse {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* --- 3. TECH STACK GRID --- */
+#tech-stack { padding: 30px 10% 80px; text-align: center; } /* Thêm padding-top để tránh bị navbar che */
+.section-title { font-size: 40px; margin-bottom: 10px; }
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.tech-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+.tech-card:hover {
+    border-color: rgba(0, 212, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-8px);
+}
+.tech-card img {
+    width: 50px; height: 50px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+.tech-card:hover img { filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.6)); }
+.tech-card span { font-size: 14px; font-weight: 500; opacity: 0.8; }
+
+/* --- 4. RESPONSIVE --- */
+@media (max-width: 768px) {
+    .nav-links { gap: 10px; }
+    .nav-links a { font-size: 12px; padding: 5px 10px; }
+    .tech-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .tech-card { padding: 20px; }
+}
+/* Tối ưu cho thiết bị nhỏ hơn 768px */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; /* Giảm padding */
+        width: 90%;         /* Chiếm 90% chiều rộng màn hình thay vì cố định */
+        top: 10px;
+    }
+
+    .nav-links {
+        gap: 8px;           /* Giảm khoảng cách giữa các mục */
+        overflow-x: auto;   /* Cho phép cuộn ngang nếu vẫn không đủ chỗ */
+        justify-content: flex-start;
+    }
+
+    .nav-links a {
+        font-size: 12px;    /* Làm nhỏ chữ lại để vừa */
+        padding: 5px 8px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        width: 95%;        /* Tăng chiều rộng để tận dụng tối đa màn hình */
+        padding: 10px 10px; /* Giảm padding để không chiếm diện tích */
+        top: 10px;
+    }
+
+    .nav-links {
+        gap: 5px;           /* Giảm khoảng cách giữa các mục xuống mức tối thiểu */
+        justify-content: space-between; /* Đẩy các mục ra đều hai bên */
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 10px;    /* Giảm size chữ đủ để đọc nhưng không quá to */
+        padding: 5px 4px;   /* Giảm padding xung quanh chữ */
+        white-space: nowrap; /* Ép chữ không được xuống dòng */
+    }
+}

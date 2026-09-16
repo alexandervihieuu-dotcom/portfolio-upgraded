@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Portfolio</title>
+
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="circle-loader">
+                <div class="h-logo">H</div>
+            </div>
+
+            <div class="name-text">
+                Alexander ViHieuu
+            </div>
+
+            <div class="loading-bar">
+                <div class="loading-progress" id="progress-bar"></div>
+            </div>
+
+            <div class="percent" id="percent-text">0%</div>
+
+            <div class="loading-label">
+                Loading ...
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+
+            <a href="#home" class="logo-text">Alex<span>.</span></a>
+
+            <ul id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#techstack" class="nav-link">Techstack</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button id="navToggle" class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="section">
+
+        <div class="hero-bg-blob"></div>
+
+        <div class="hero-container">
+
+            <div class="profile-image reveal" data-reveal="right">
+                <div class="profile-ring"></div>
+                <img src="assets/avatar.png" alt="Vi Hieuu" loading="eager">
+                <span class="status-badge"><span class="dot"></span>Available for work</span>
+            </div>
+
+            <div class="hero-content reveal" data-reveal="left">
+                <p class="hello">Xin chào, mình là</p>
+
+                <h1>
+                    Alexander
+                    <span>ViHieuu</span>
+                </h1>
+
+                <h2 id="typing"></h2>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn">Xem Projects</a>
+                    <a href="#contact" class="btn btn-ghost">Liên hệ ngay</a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://www.facebook.com/vi.hieuu.2025" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                    <a href="mailto:alexandervihieuu@gmail.com" aria-label="Email">@</a>
+                    <a href="tel:0858805379" aria-label="Phone">☎</a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Cuộn xuống"><span></span></a>
+
+    </section>
+
+   <!-- ABOUT -->
+<section id="about">
+  <div class="about-container">
+
+    <div class="section-header reveal">
+      <span class="section-tag">● ABOUT ME</span>
+      <h2>Một chút về <span>bản thân</span></h2>
+    </div>
+
+    <div class="about-wrapper">
+
+      <div class="about-text reveal" data-reveal="left">
+        <p>Mình là <strong>Vi Hieuu</strong>, một developer trẻ với
+        niềm đam mê công nghệ và thiết kế. Mình thích kết hợp tư duy
+        logic của một engineer và con mắt thẩm mỹ của một designer.</p>
+
+        <p>Ngoài coding, mình thích tìm hiểu công nghệ mới,
+        đi bơi và uống cà phê ☕, và mình có niềm đam mê lớn với bida.</p>
+
+        <p>Ngoài phát triển web, tôi chủ động mở rộng kiến thức sang
+        lĩnh vực an ninh mạng — nghiên cứu môi trường Kali Linux,
+        tìm hiểu mô hình giao thức TCP/IP và cách thức hoạt động
+        của hệ thống mạng.</p>
+      </div>
+
+      <div class="about-image reveal" data-reveal="right">
+        <img src="hieu-profile.jpg" alt="Vi Hieuu" loading="lazy" />
+        <p class="image-caption">My personal photo</p>
+      </div>
+
+    </div>
+
+    <div class="stats-container">
+      <div class="stat-card reveal">
+        <h3>2+</h3>
+        <p>Năm kinh nghiệm</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3>20+</h3>
+        <p>Dự án hoàn thành</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3>100%</h3>
+        <p>Đam mê học hỏi</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+   <section id="skills">
+
+    <div class="skills-container">
+
+        <div class="skills-header reveal">
+
+            <span class="section-tag">
+                ● WHAT I DO
+            </span>
+
+            <h2>
+                Skills &
+                <span>Expertise</span>
+            </h2>
+
+            <p>
+                Mình làm việc trên cả frontend và backend,
+                từ thiết kế giao diện đến triển khai server.
+            </p>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Frontend -->
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>Frontend Development</h3>
+
+                <p>
+                    Xây dựng giao diện web hiện đại,
+                    responsive và mượt mà với những
+                    animation tinh tế.
+                </p>
+
+                <div class="skill-tags">
+                    <span>React</span>
+                    <span>Vue</span>
+                    <span>Tailwind</span>
+                    <span>TypeScript</span>
+                </div>
+
+            </div>
+
+            <!-- Backend -->
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon backend">
+                    ⚙
+                </div>
+
+                <h3>Backend Development</h3>
+
+                <p>
+                    Xây dựng API mạnh mẽ, scalable và bảo mật.
+                    Quản lý database và xử lý business logic.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>Python</span>
+                    <span>MongoDB</span>
+                </div>
+
+            </div>
+
+            <!-- UI UX -->
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon design">
+                    🎨
+                </div>
+
+                <h3>UI / UX Design</h3>
+
+                <p>
+                    Thiết kế giao diện trực quan,
+                    tối ưu trải nghiệm người dùng.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Figma</span>
+                    <span>Adobe XD</span>
+                    <span>Photoshop</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section id="projects">
+
+    <div class="projects-container">
+
+        <div class="section-title reveal">
+
+            <span>MY WORK</span>
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                Một số dự án và phòng lab bảo mật nổi bật mình đã thực hiện.
+            </p>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-icon">🛰️</div>
+                <h3>Port Scanning with Nmap</h3>
+                <p>Khám phá và phân tích các cổng dịch vụ đang hoạt động trên hệ thống.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">📡</div>
+                <h3>Network Packet Analysis</h3>
+                <p>Phân tích lưu lượng mạng bằng Wireshark và TCP/IP.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">🕵️</div>
+                <h3>MAC Address Spoofing Lab</h3>
+                <p>Nghiên cứu kỹ thuật thay đổi địa chỉ MAC trong môi trường thử nghiệm.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">🔐</div>
+                <h3>Password Cracking Research</h3>
+                <p>Tìm hiểu cơ chế hash và đánh giá độ mạnh mật khẩu.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">🗄️</div>
+                <h3>SQL Injection Lab</h3>
+                <p>Thực hành nhận diện và phòng chống lỗi SQL Injection.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">⚠️</div>
+                <h3>XSS Security Testing</h3>
+                <p>Nghiên cứu các dạng Cross-Site Scripting và biện pháp bảo vệ.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">📶</div>
+                <h3>Wi-Fi Network Scanning</h3>
+                <p>Khảo sát mạng không dây trong môi trường học tập.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">🔎</div>
+                <h3>Information Gathering with Recon-ng</h3>
+                <p>Thu thập thông tin phục vụ đánh giá an ninh.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">🎣</div>
+                <h3>Email Phishing Simulation</h3>
+                <p>Mô phỏng nhận diện chiến dịch phishing phục vụ đào tạo.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <div class="project-icon">🍯</div>
+                <h3>Honeypot Deployment</h3>
+                <p>Triển khai Honeypot để nghiên cứu hành vi tấn công.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+
+    <div class="container">
+
+        <div class="section-title reveal">
+            <span>MY JOURNEY</span>
+            <h2>Experience</h2>
+            <p>
+                Hành trình học tập và phát triển kỹ năng lập trình của tôi.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <!-- Item 1 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="year">2024</span>
+
+                    <h3>Bắt đầu học lập trình Web</h3>
+
+                    <p>
+                        Làm quen với HTML, CSS và JavaScript.
+                        Xây dựng các giao diện website cơ bản và học về Responsive Design.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="year">2025</span>
+
+                    <h3>Frontend Developer</h3>
+
+                    <p>
+                        Phát triển nhiều dự án cá nhân với ReactJS,
+                        TailwindCSS và JavaScript hiện đại.
+                        Tập trung vào UI/UX và tối ưu hiệu năng website.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+                    <span class="year">2026</span>
+
+                    <h3>Fullstack Developer</h3>
+
+                    <p>
+                        Xây dựng ứng dụng Fullstack với
+                        NodeJS, ExpressJS, MongoDB và MySQL.
+                        Triển khai website lên GitHub Pages và VPS.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="techstack">
+  <div class="container">
+    <div class="section-title reveal">
+        <span>TOOLBOX</span>
+        <h2>Tech Stack</h2>
+        <p>Những công cụ mình sử dụng hàng ngày</p>
+    </div>
+
+    <div class="tech-grid">
+        <div class="tech-card reveal"><img src="icons/react.png" alt="React" loading="lazy"><span>React</span></div>
+        <div class="tech-card reveal"><img src="icons/js.png" alt="JS" loading="lazy"><span>JavaScript</span></div>
+        <div class="tech-card reveal"><img src="icons/html5.png" alt="HTML5" loading="lazy"><span>HTML5</span></div>
+        <div class="tech-card reveal"><img src="icons/css3.png" alt="CSS3" loading="lazy"><span>CSS3</span></div>
+        <div class="tech-card reveal"><img src="icons/node.png" alt="Node" loading="lazy"><span>Node.js</span></div>
+        <div class="tech-card reveal"><img src="icons/python.png" alt="Python" loading="lazy"><span>Python</span></div>
+        <div class="tech-card reveal"><img src="icons/git.png" alt="Git" loading="lazy"><span>Git</span></div>
+        <div class="tech-card reveal"><img src="icons/github.png" alt="GitHub" loading="lazy"><span>GitHub</span></div>
+        <div class="tech-card reveal"><img src="icons/figma.png" alt="Figma" loading="lazy"><span>Figma</span></div>
+        <div class="tech-card reveal"><img src="icons/docker.png" alt="Docker" loading="lazy"><span>Docker</span></div>
+        <div class="tech-card reveal"><img src="icons/mongodb.png" alt="MongoDB" loading="lazy"><span>MongoDB</span></div>
+        <div class="tech-card reveal"><img src="icons/aws.png" alt="AWS" loading="lazy"><span>AWS</span></div>
+    </div>
+  </div>
+</section>
+    <!-- CONTACT -->
+   <section id="contact">
+  <div class="contact-container">
+
+    <div class="badge reveal">
+      <span class="badge-dot"></span>
+      Get in touch
+    </div>
+
+    <h1 class="reveal">Let's <em>work</em><br>together.</h1>
+
+    <p class="subtitle reveal">
+      Có dự án thú vị? Cần một developer? Hay chỉ muốn chào mình một câu?
+      Đừng ngại nhắn nhé! Mình luôn mở lòng với những cơ hội mới.
+    </p>
+
+    <div class="cards">
+      <a class="card reveal" href="mailto:alexandervihieuu@gmail.com">
+        <div class="card-icon icon-email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M2 7l10 7 10-7" />
+          </svg>
+        </div>
+        <div class="card-label">Email</div>
+        <div class="card-value">alexandervihieuu@gmail.com</div>
+      </a>
+
+      <a class="card active-card reveal" href="tel:0858805379">
+        <div class="card-icon icon-phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.1 3.4 2 2 0 0 1 3.08 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z" />
+          </svg>
+        </div>
+        <div class="card-label">Phone / Zalo</div>
+        <div class="card-value">0858 805 379</div>
+      </a>
+
+      <a class="card reveal" href="https://www.facebook.com/vi.hieuu.2025" target="_blank" rel="noopener">
+        <div class="card-icon icon-fb">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#60a5fa">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </div>
+        <div class="card-label">Facebook</div>
+        <div class="card-value">Vi Hieuu</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- GOOGLE MAP SECTION -->
+<section id="map-section" class="section">
+    <div class="container map-content-wrapper">
+        <div class="map-text reveal" data-reveal="left">
+            <span class="section-tag">● FIND ME</span>
+            <h3>Địa chỉ của tôi</h3>
+            <p>1009 Nguyễn Tất Thành, Thanh Khê, Đà Nẵng 55000, Việt Nam.</p>
+            <p>Bạn có thể ghé thăm mình hoặc liên hệ để trao đổi trực tiếp về các dự án công nghệ!</p>
+        </div>
+
+        <div class="map-wrapper reveal" data-reveal="right">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.8639463684017!2d108.18780311020934!3d16.07254843928585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218560036922b%3A0xd589a874d5922b72!2zMTAwOSBOZ3V54buFbiBU4bqldCBUaMOgbmgsIFRoYW5oIEtow6osIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1781330772342!5m2!1svi!2s"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Alexander <span>ViHieuu</span>. Made with love in Đà Nẵng.</p>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
