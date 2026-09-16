@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Page Title</title>
+    <link rel='stylesheet' href='about.css'>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Alexander ViHieuu </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="text-white p-4 md:p-8">
+   
+    <nav class="flex justify-center mb-12">
+        <div class="glass px-6 py-3 rounded-full flex gap-6 text-sm font-medium opacity-80">
+            <nav class="navbar">
+    <div class="nav-links">
+        <a href="skills.html" id="nav-skills">Skills</a>
+        <a href="projects.html" id="nav-projects">Projects</a>
+        <a href="experience.html" id="nav-experience">Experience</a>
+        <a href="contacts.html" id="nav-contacts">Contacts</a>
+        <a href="techstack.html" id="nav-techstack">Techstack</a>
+    </div>
+</nav>
+        </div>
+    </nav>
+
+    <div class="max-w-md mx-auto">
+        <h2 class="text-xl font-light mb-8 opacity-70 flex items-center gap-2">
+            Một Chút Về ... 
+            <span class="inline-flex gap-0.5">
+                <span class="w-1 h-4 bg-purple-500"></span><span class="w-1 h-4 bg-purple-400"></span><span class="w-1 h-4 bg-orange-400"></span>
+            </span>
+        </h2>
+        
+        <div class="w-36 h-36 mx-auto bg-gradient-to-tr from-purple-600 to-orange-500 rounded-3xl flex items-center justify-center text-6xl font-black mb-10 shadow-2xl shadow-purple-900/20">H</div>
+
+        <div class="text-left space-y-5 text-gray-300 leading-relaxed mb-10">
+            <p>Mình là <span class="text-white font-semibold"> Vi Hieuu</span>, một developer trẻ với niềm đam mê công nghệ và thiết kế.</p>
+            <p>Mình thích kết hợp giữa <span class="text-white font-semibold">tư duy logic của một engineer</span> và <span class="text-white font-semibold">con mắt thẩm mỹ của một designer</span> để tạo ra những sản phẩm vừa hoạt động tốt vừa đẹp mắt.</p>
+            <p>Ngoài coding, mình thích tìm hiểu công nghệ mới, đi bơi và uống cà phê ☕, và mình có niềm đam mê lớn với bida </p>
+            <p> Ngoài phát triển web, tôi chủ động mở rộng kiến thức sang lĩnh vực an ninh mạng — nghiên cứu môi trường Kali Linux, tìm hiểu mô hình giao thức TCP/IP và cách thức hoạt động của hệ thống mạng. Với tư duy kết hợp giữa phát triển phần mềm và bảo mật, tôi hướng đến việc xây dựng những sản phẩm công nghệ không chỉ hoạt động hiệu quả mà còn đảm bảo an toàn cho người dùng.</p>
+        </div>
+
+        <div class="space-y-4">
+            <div class="glass p-6 rounded-3xl border-l-4 border-purple-500">
+                <div class="text-4xl font-bold gradient-text">2+</div>
+                <div class="text-sm font-medium tracking-wide mt-1">Năm kinh nghiệm</div>
+            </div>
+            <div class="glass p-6 rounded-3xl border-l-4 border-orange-400">
+                <div class="text-4xl font-bold gradient-text">20+</div>
+                <div class="text-sm font-medium tracking-wide mt-1">Dự án hoàn thành</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hiệu ứng nhẹ khi cuộn trang
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) nav.classList.add('opacity-90');
+            else nav.classList.remove('opacity-90');
+        });
+        console.log("Portfolio đã sẵn sàng!");
+    </script>
+</body>
+</html>

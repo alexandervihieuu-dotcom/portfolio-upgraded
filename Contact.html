@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vi Hieuu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="bg-gradient"></div>
+  <canvas id="stars-canvas"></canvas>
+
+  <svg class="mesh-wrap" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="rgba(180,100,255,0.6)" stroke-width="0.6" fill="none">
+      <ellipse cx="150" cy="150" rx="140" ry="40" />
+      <ellipse cx="150" cy="150" rx="140" ry="80" />
+      <ellipse cx="150" cy="150" rx="140" ry="120" />
+      <ellipse cx="150" cy="150" rx="140" ry="140" />
+      <ellipse cx="150" cy="150" rx="40" ry="140" transform="rotate(0,150,150)" />
+      <ellipse cx="150" cy="150" rx="40" ry="140" transform="rotate(45,150,150)" />
+      <ellipse cx="150" cy="150" rx="40" ry="140" transform="rotate(90,150,150)" />
+      <ellipse cx="150" cy="150" rx="40" ry="140" transform="rotate(135,150,150)" />
+      <polygon points="150,10 290,150 150,290 10,150" stroke-width="0.4" />
+      <line x1="150" y1="10" x2="150" y2="290" stroke-width="0.4" />
+      <line x1="10" y1="150" x2="290" y2="150" stroke-width="0.4" />
+    </g>
+  </svg>
+
+  <nav>
+    <div class="nav-pill">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Get in touch
+    </div>
+
+    <h1>Let's <em>work</em><br>together.</h1>
+
+    <p class="subtitle">
+      Có dự án thú vị? Cần một developer? Hay chỉ muốn chào mình một câu?
+      Đừng ngại nhắn nhé! Mình luôn mở lòng với những cơ hội mới.
+    </p>
+
+    <div class="cards">
+
+      <a class="card" href="mailto:alexandervihieuu@gmail.com">
+        <div class="card-icon icon-email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M2 7l10 7 10-7" />
+          </svg>
+        </div>
+        <div class="card-label">Email</div>
+        <div class="card-value">alexandervihieuu@gmail.com</div>
+      </a>
+
+      <a class="card active-card" href="tel:0858805379">
+        <div class="card-icon icon-phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.1 3.4 2 2 0 0 1 3.08 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z" />
+          </svg>
+        </div>
+        <div class="card-label">Phone / Zalo</div>
+        <div class="card-value">0858 805 379</div>
+      </a>
+
+      <a class="card" href="https://facebook.com/Vi.Hieuu" target="_blank" rel="noopener">
+        <div class="card-icon icon-fb">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#60a5fa">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </div>
+        <div class="card-label">Facebook</div>
+        <div class="card-value">Vi Hieuu</div>
+      </a>
+
+      <a class="card" href="https://zalo.me/0858805379" target="_blank" rel="noopener">
+        <div class="card-icon icon-zalo">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            <circle cx="9" cy="10" r="1" fill="#c084fc" stroke="none" />
+            <circle cx="12" cy="10" r="1" fill="#c084fc" stroke="none" />
+            <circle cx="15" cy="10" r="1" fill="#c084fc" stroke="none" />
+          </svg>
+        </div>
+        <div class="card-label">Zalo</div>
+        <div class="card-value">0858 805 379</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>© 2026 Vi Hieuu. Made with <span>♥</span> in Vietnam.</footer>
+
+  <div class="toast" id="toast">Đã copy!</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
